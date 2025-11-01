@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Cor do plano de fundo */
+    color: #333; /* Cor do texto principal */
+
+    /* Centralizar tudo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura minima de 100% da tela */
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* O container principal que segura tudo */
+.container {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Uma sombra suave */
+    text-align: center; /* Centralizar o texto dentro dele */
+    width: 90%; /* Ocupa 90% da largura da tela */
+    max-width: 600px; /* Mas no máximo 600px de largura */
+}
+
+/* Titulo */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* A caixa que guarda a citação */
+.quote-box {
+    background-color: #f9f9f9; /* Cor do fundo */
+    border-left: 5px solid #3498db; /* Uma borda azul à esquerda */
+    padding: 20px;
+    margin: 30px 0; /* Espaçamento em cima e embaixo */
+    border-radius: 5px;
+    position: relative;
+}
+
+#copy-btn {
+    position: absolute; /* Posição absoluta EM RELAÇÃO à quote-box */
+    top: 20px;  /* 20px do topo da caixa */
+    right: 20px; /* 20px da direita da caixa */
+
+    /* Estilos para deixar ele menor e mais sutil */
+    background-color: #eee;
+    color: #555;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.8rem; /* Fonte pequena */
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#copy-btn:hover {
+    background-color: #ddd;
+}
+
+
+
+/* O texto da citação */
+#quote-text {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-style: italic; /* Estilo itálico */
+    line-height: 1.6; /* Altura da linha (espaçamento) */
+}
+
+/* O autor da citação (inicialmente escondido) */
+#quote-author {
+    font-size: 1rem;
+    font-weight: bold; /* Negrito */
+    color: #555;
+    text-align: right; /* Alinha o autor à direita */
+    margin-top: 15px;
+    margin-right: 80px;
+}
+
+/* O nosso botão principal */
+#new-quote-btn {
+    background-color: #3498db; /* Cor de fundo azul */
+    color: #ffffff; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 12px 25px; /* Espaçamento interno */
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+    transition: background-color 0.3s ease; /* Efeito suave na cor */
+}
+
+/* Efeito HOVER: O que acontece ao passar o mouse sobre o botão */
+#new-quote-btn:hover {
+    background-color: #2980b9; /* Um azul um pouco mais escuro */
+}
+
+/* --- Estilos do Rodapé --- */
+#rodape {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+    text-align: center;
+    align-self: center;
+}
+
+/* Estiliza a linha <hr> */
+# hr {
+    border: none;
+    border-top: 1px solid #eee; /* Uma linha cinza bem clara */
+}
+
+/* Estiliza o parágrafo do rodapé */
+#rodape p {
+    font-size: 1rem; /* tamanho do rodape */
+    color: #777; /* Cor cinza (o 'text-body-secondary' do Bootstrap) */
+}
+
+/* Estiliza o link dentro do rodapé */
+#rodape a {
+    color: #3498db; /* Usa a mesma cor azul do nosso botão */
+    text-decoration: none; /* Tira o sublinhado padrão */
+}
+
+/* Adiciona o sublinhado de volta quando passa o mouse */
+#rodape a:hover {
+    text-decoration: underline;
+}
