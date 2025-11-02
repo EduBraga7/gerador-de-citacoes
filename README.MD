@@ -8,7 +8,7 @@ Um projeto front-end simples, mas completo, que gera citações aleatórias a ca
 
 [**Clique aqui para ver o projeto funcionando!**](https://[SEU-USUARIO].github.io/gerador-de-citacoes/)
 
-![Captura de tela do Gerador de Citações](image_0a2fe8.png)
+![Captura de tela do Gerador de Citações](screenshot-projeto.png)
 
 *(Obs: A imagem acima é a `image_0a2fe8.png` que você me enviou. Precisamos ter certeza de que ela está na pasta do projeto para aparecer aqui)*.
 
