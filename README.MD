@@ -6,7 +6,7 @@ Um projeto front-end simples, mas completo, que gera citações aleatórias a ca
 
 ### ✨ Demonstração
 
-[**Clique aqui para ver o projeto funcionando!**](https://[SEU-USUARIO].github.io/gerador-de-citacoes/)
+[**Clique aqui para ver o projeto funcionando!**](https://edubraga7.github.io/gerador-de-citacoes/)
 
 ![Captura de tela do Gerador de Citações](screenshot-projeto.png)
 
