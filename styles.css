@@ -2,13 +2,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5; /* Cor do plano de fundo */
-    color: #333; /* Cor do texto principal */
+    /* Fundo escuro */
+    background-color: #121212; 
+    color: #e0e0e0; /* Cor do texto principal (cinza claro) */
 
-    /* Centralizar tudo */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Altura minima de 100% da tela */
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -19,45 +19,46 @@ main {
     align-items: center;
 }
 
-
 /* O container principal que segura tudo */
 .container {
-    background-color: #ffffff; /* Fundo branco */
+    background-color: #1e1e1e; /* Fundo do card (grafite) */
     padding: 30px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Uma sombra suave */
-    text-align: center; /* Centralizar o texto dentro dele */
-    width: 90%; /* Ocupa 90% da largura da tela */
-    max-width: 600px; /* Mas no máximo 600px de largura */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais escura */
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #333; /* Borda sutil para definir o card */
 }
 
 /* Titulo */
 h1 {
-    color: #2c3e50;
+    color: #ffffff; /* Título branco */
     margin-bottom: 20px;
 }
 
 /* A caixa que guarda a citação */
 .quote-box {
-    background-color: #f9f9f9; /* Cor do fundo */
-    border-left: 5px solid #3498db; /* Uma borda azul à esquerda */
+    background-color: #2a2a2a; /* Cor do fundo da citação */
+    border-left: 5px solid #3498db; /* O azul se destaca bem no escuro */
     padding: 20px;
-    margin: 30px 0; /* Espaçamento em cima e embaixo */
+    margin: 30px 0;
     border-radius: 5px;
     position: relative;
+    overflow: hidden;
 }
 
 #copy-btn {
-    position: absolute; /* Posição absoluta EM RELAÇÃO à quote-box */
-    top: 20px;  /* 20px do topo da caixa */
-    right: 20px; /* 20px da direita da caixa */
-
-    /* Estilos para deixar ele menor e mais sutil */
-    background-color: #eee;
-    color: #555;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
+    /* Botão de copiar adaptado */
+    background-color: #333;
+    color: #e0e0e0;
     border: none;
     padding: 8px 12px;
-    font-size: 0.8rem; /* Fonte pequena */
+    font-size: 0.8rem;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -65,44 +66,43 @@ h1 {
 }
 
 #copy-btn:hover {
-    background-color: #ddd;
+    background-color: #444;
 }
-
-
 
 /* O texto da citação */
 #quote-text {
-    font-size: 1.2rem; /* Tamanho da fonte */
-    font-style: italic; /* Estilo itálico */
-    line-height: 1.6; /* Altura da linha (espaçamento) */
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #e0e0e0; /* Herda do body, mas bom garantir */
 }
 
-/* O autor da citação (inicialmente escondido) */
+/* O autor da citação */
 #quote-author {
     font-size: 1rem;
-    font-weight: bold; /* Negrito */
-    color: #555;
-    text-align: right; /* Alinha o autor à direita */
+    font-weight: bold;
+    color: #999; /* Autor com menos destaque */
+    text-align: right;
     margin-top: 15px;
     margin-right: 80px;
 }
 
 /* O nosso botão principal */
 #new-quote-btn {
-    background-color: #3498db; /* Cor de fundo azul */
-    color: #ffffff; /* Texto branco */
-    border: none; /* Sem borda */
-    padding: 12px 25px; /* Espaçamento interno */
+    background-color: #3498db; /* O azul original funciona perfeitamente */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor para "mãozinha" */
-    transition: background-color 0.3s ease; /* Efeito suave na cor */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Efeito HOVER: O que acontece ao passar o mouse sobre o botão */
+/* Efeito HOVER no Dark Mode */
 #new-quote-btn:hover {
-    background-color: #2980b9; /* Um azul um pouco mais escuro */
+    background-color: #2980b9; 
 }
 
 /* --- Estilos do Rodapé --- */
@@ -115,25 +115,24 @@ h1 {
     align-self: center;
 }
 
-/* Estiliza a linha <hr> */
-# hr {
+/* Corrigido: Estiliza a linha <hr> */
+hr {
     border: none;
-    border-top: 1px solid #eee; /* Uma linha cinza bem clara */
+    border-top: 1px solid #333; /* Linha cinza escura */
 }
 
 /* Estiliza o parágrafo do rodapé */
 #rodape p {
-    font-size: 1rem; /* tamanho do rodape */
-    color: #777; /* Cor cinza (o 'text-body-secondary' do Bootstrap) */
+    font-size: 1rem;
+    color: #777; /* Cor cinza */
 }
 
 /* Estiliza o link dentro do rodapé */
 #rodape a {
-    color: #3498db; /* Usa a mesma cor azul do nosso botão */
-    text-decoration: none; /* Tira o sublinhado padrão */
+    color: #3498db; /* Link azul para destaque */
+    text-decoration: none;
 }
 
-/* Adiciona o sublinhado de volta quando passa o mouse */
 #rodape a:hover {
     text-decoration: underline;
 }

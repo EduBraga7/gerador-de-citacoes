@@ -52,6 +52,7 @@ Este projeto foi um ótimo exercício para solidificar conceitos de como o HTML,
 
 ---
 
-<p align="center">
-  Feito por Eduardo Braga
-</p>
+## 👨‍💻 Desenvolvido por
+
+* **Eduardo Braga do Prado**
+* [GitHub](https://github.com/EduBraga7)
